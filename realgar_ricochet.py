@@ -156,7 +156,6 @@ class Game:
         st = self.mid.render(f"STREAK  {self.streak}", True, MINT)
         surf.blit(st, st.get_rect(center=(W // 2, 1690)))
         hint = self.tiny.render("A / D  slide scoop     R  reset", True, (230, 180, 160))
-        surf.blit(brand, brand.get_rect(center=(W // 2, 1846))) if False else None
         surf.blit(hint, hint.get_rect(center=(W // 2, 1764)))
         brand = self.mid.render("x.com/ElbowOS", True, (255, 220, 200))
         surf.blit(brand, brand.get_rect(center=(W // 2, 1846)))
